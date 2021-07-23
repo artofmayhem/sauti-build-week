@@ -1,0 +1,33 @@
+{
+  "name": "sauti-build-week",
+  "version": "1.0.0",
+  "description": "Knex\r     npm i -g knex\r   Morgan\r     npm i -g morgan\r   Helmet\r     npm i -g helmet\r   CORS\r     npm i -g cors\r   Postgres\r     brew install postgres\r   Express\r     npm i -g express\r   sqlIte3\r     brew install sqlite3\r   JSONWEBTOKEN\r     npm i -g jsonwebtoken\r   bcryptjs\r     npm i -g bcryptjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artofmayhem/sauti-build-week.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/artofmayhem/sauti-build-week/issues"
+  },
+  "homepage": "https://github.com/artofmayhem/sauti-build-week#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "helmet": "^4.6.0",
+    "jest": "^27.0.6",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^0.95.7",
+    "morgan": "^1.10.0",
+    "pg": "^8.6.0",
+    "postgres": "^1.0.2",
+    "sqlite3": "^5.0.2"
+  }
+}
