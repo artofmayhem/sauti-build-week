@@ -1,3 +1,15 @@
 {
-    "git.ignoreLimitWarning": true
+    "git.ignoreLimitWarning": true,
+    "cSpell.words": [
+        "a",
+        "app",
+        "databaseh",
+        "heroku",
+        "market",
+        "migrateh",
+        "pg",
+        "psql",
+        "rollbackh",
+        "saudi"
+    ]
 }

@@ -4,7 +4,17 @@
   "description": "Knex\r     npm i -g knex\r   Morgan\r     npm i -g morgan\r   Helmet\r     npm i -g helmet\r   CORS\r     npm i -g cors\r   Postgres\r     brew install postgres\r   Express\r     npm i -g express\r   sqlIte3\r     brew install sqlite3\r   JSONWEBTOKEN\r     npm i -g jsonwebtoken\r   bcryptjs\r     npm i -g bcryptjs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "migrate": "knex migrate:latest",
+    "rollback": "knex migrate:rollback",
+    "seed": "knex seed:run",
+    "migrateh": "heroku run knex migrate:latest -a saudi-market-app",
+    "rollbackh": "heroku run knex migrate:rollback -a saudi-market-app",
+    "databaseh": "heroku pg:psql -a saudi-market-app",
+    "seedh": "heroku run knex seed:run -a saudi-market-app",
+    "test": "cross-env NODE_ENV=testing jest --watchAll --verbose --runInBand",
+    "deploy": "git push heroku main"
   },
   "repository": {
     "type": "git",
@@ -20,6 +30,7 @@
   "dependencies": {
     "bcrypt": "^5.0.1",
     "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "helmet": "^4.6.0",
     "jest": "^27.0.6",
